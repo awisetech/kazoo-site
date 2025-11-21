@@ -14,12 +14,12 @@
 </head>
 <body>
 
-<header>
+<header data-netlify-visual="header">
   <div class="header-inner">
     <div class="brand">
       <img src="../assets/logo.png" class="brand-logo" alt="Kazoo Digital logo">
     </div>
-    <nav>
+    <nav data-netlify-visual="navigation">
       <ul>
         <li><a href="index.html">Services</a></li>
         <li><a href="advertising.html">Publicité</a></li>
@@ -37,21 +37,22 @@
 
 
 <main class="wrapper">
-  <section class="hero reveal">
+
+  <section class="hero reveal" data-netlify-visual="contact-hero-fr">
     <div class="hero-inner">
       <div>
-        <h1>Contactez Kazoo Digital</h1>
-        <p>Parlez-nous de vos emplacements, campagnes ou questions et nous vous reviendrons avec des options concrètes.</p>
+        <h1 data-netlify-visual="contact-hero-title-fr">Contactez Kazoo Digital</h1>
+        <p data-netlify-visual="contact-hero-body-fr">Parlez-nous de vos emplacements, campagnes ou questions et nous vous reviendrons avec des options concrètes.</p>
       </div>
-      <div class="hero-card">
-        <strong>Vous préférez le courriel&nbsp;?</strong>
-        Vous pouvez aussi nous écrire directement à <em>info@kazoodigital.com</em>.
-      </div>
+      <aside class="hero-card" data-netlify-visual="contact-sidecard-fr">
+        <p><strong>Vous préférez le courriel&nbsp;?</strong></p>
+        <p>Vous pouvez aussi nous écrire directement à <em>info@kazoodigital.com</em>.</p>
+      </aside>
     </div>
   </section>
 
-  <section class="reveal">
-    <h2>Envoyez-nous un message</h2>
+  <section class="reveal" data-netlify-visual="contact-form-section-fr">
+    <h2 data-netlify-visual="contact-form-title-fr">Envoyez-nous un message</h2>
     <form name="contact-fr" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact-fr">
       <label for="nom">Nom</label>
@@ -80,12 +81,12 @@
 </main>
 
 
-<footer>
+<footer data-netlify-visual="footer">
   <div class="footer-canada">
     <img src="../assets/flag-canada.png" class="flag-img" alt="Drapeau du Canada">
-    <span>Fièrement canadien</span>
+    <span data-netlify-visual="footer-tagline">Fièrement canadien</span>
   </div>
-  &copy; <span id="year"></span> Kazoo Digital
+  <span>&copy; <span id="year"></span> Kazoo Digital</span>
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();

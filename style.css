@@ -182,11 +182,6 @@ section h3 {
   margin-bottom: 6px;
 }
 
-.section-intro is {
-  color: var(--text-muted);
-  margin-bottom: 10px;
-}
-
 .section-intro {
   color: var(--text-muted);
   margin-bottom: 10px;

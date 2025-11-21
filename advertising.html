@@ -14,12 +14,12 @@
 </head>
 <body>
 
-<header>
+<header data-netlify-visual="header">
   <div class="header-inner">
     <div class="brand">
       <img src="assets/logo.png" class="brand-logo" alt="Kazoo Digital logo">
     </div>
-    <nav>
+    <nav data-netlify-visual="navigation">
       <ul>
         <li><a href="index.html">Services</a></li>
         <li><a href="advertising.html">Advertising</a></li>
@@ -37,43 +37,44 @@
 
 
 <main class="wrapper">
-  <section class="hero reveal">
+
+  <section class="hero reveal" data-netlify-visual="adv-hero">
     <div class="hero-inner">
       <div>
-        <h1>Outdoor Advertising in Cote Saint-Luc</h1>
-        <p>High-impact outdoor screens that reach real local audiences where they drive, live, and work.</p>
-        <p>Ideal for local businesses, events, and brands that want strong visibility without complex media buys.</p>
+        <h1 data-netlify-visual="adv-hero-title">Outdoor Advertising in Cote Saint-Luc</h1>
+        <p data-netlify-visual="adv-hero-body-1">High-impact outdoor screens that reach real local audiences where they drive, live, and work.</p>
+        <p data-netlify-visual="adv-hero-body-2">Ideal for local businesses, events, and brands that want strong visibility without complex media buys.</p>
         <div class="hero-cta">
-          <a class="btn" href="contact.html">Request Outdoor Rates</a>
+          <a class="btn" href="contact.html" data-netlify-visual="adv-hero-cta">Request Outdoor Rates</a>
         </div>
       </div>
-      <div class="hero-card">
-        <strong>Big, bright, and unmissable.</strong>
-        Our faces deliver thousands of daily impressions for campaigns of just a few weeks or long-term presence.
-      </div>
+      <aside class="hero-card" data-netlify-visual="adv-hero-sidecard">
+        <p><strong>Big, bright, and unmissable.</strong></p>
+        <p>Our faces deliver thousands of daily impressions for campaigns of just a few weeks or long-term presence.</p>
+      </aside>
     </div>
   </section>
 
-  <section class="reveal">
-    <h2>Why Outdoor Advertising Works</h2>
+  <section class="reveal" data-netlify-visual="adv-why">
+    <h2 data-netlify-visual="adv-why-title">Why Outdoor Advertising Works</h2>
     <div class="card-grid">
-      <div class="card">
-        <strong>Stand-out Visibility</strong>
-        Bright, full-motion content that cuts through visual noise, day and night.
-      </div>
-      <div class="card">
-        <strong>Real Local Reach</strong>
-        Screens placed in high-traffic areas for consistent daily exposure.
-      </div>
-      <div class="card">
-        <strong>Flexible Campaigns</strong>
-        Run short bursts for launches and events, or maintain ongoing brand presence.
-      </div>
+      <article class="card" data-netlify-visual="adv-why-visibility">
+        <h3>Stand-out Visibility</h3>
+        <p>Bright, full-motion content that cuts through visual noise, day and night.</p>
+      </article>
+      <article class="card" data-netlify-visual="adv-why-reach">
+        <h3>Real Local Reach</h3>
+        <p>Screens placed in high-traffic areas for consistent daily exposure.</p>
+      </article>
+      <article class="card" data-netlify-visual="adv-why-flexibility">
+        <h3>Flexible Campaigns</h3>
+        <p>Run short bursts for launches and events, or maintain ongoing brand presence.</p>
+      </article>
     </div>
   </section>
 
-  <section class="reveal">
-    <h2>How It Works</h2>
+  <section class="reveal" data-netlify-visual="adv-how">
+    <h2 data-netlify-visual="adv-how-title">How It Works</h2>
     <ol>
       <li><strong>Tell us your goal</strong> – awareness, promotion, event, or launch.</li>
       <li><strong>Choose your campaign length</strong> – from a few weeks to ongoing.</li>
@@ -82,29 +83,29 @@
     </ol>
   </section>
 
-  <section class="reveal">
-    <h2>We Support the Community</h2>
-    <p class="section-intro">
+  <section class="reveal" data-netlify-visual="adv-community">
+    <h2 data-netlify-visual="adv-community-title">We Support the Community</h2>
+    <p class="section-intro" data-netlify-visual="adv-community-body">
       We offer discounted rates for non-profits, schools, and places of worship. If your organization serves the community, tell us about your project — we’ll work with your budget.
     </p>
   </section>
 
-  <section class="reveal">
-    <h2>Ready to See Availability and Rates?</h2>
-    <p class="section-intro">
+  <section class="reveal" data-netlify-visual="adv-cta">
+    <h2 data-netlify-visual="adv-cta-title">Ready to See Availability and Rates?</h2>
+    <p class="section-intro" data-netlify-visual="adv-cta-body">
       Share a few details about your campaign and we’ll follow up with locations, options, and pricing.
     </p>
-    <p><a class="btn" href="contact.html">Contact Us</a></p>
+    <p><a class="btn" href="contact.html" data-netlify-visual="adv-cta-button">Contact Us</a></p>
   </section>
 </main>
 
 
-<footer>
+<footer data-netlify-visual="footer">
   <div class="footer-canada">
     <img src="assets/flag-canada.png" class="flag-img" alt="Canadian flag">
-    <span>Proudly Canadian</span>
+    <span data-netlify-visual="footer-tagline">Proudly Canadian</span>
   </div>
-  &copy; <span id="year"></span> Kazoo Digital
+  <span>&copy; <span id="year"></span> Kazoo Digital</span>
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();

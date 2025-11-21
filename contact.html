@@ -14,12 +14,12 @@
 </head>
 <body>
 
-<header>
+<header data-netlify-visual="header">
   <div class="header-inner">
     <div class="brand">
       <img src="assets/logo.png" class="brand-logo" alt="Kazoo Digital logo">
     </div>
-    <nav>
+    <nav data-netlify-visual="navigation">
       <ul>
         <li><a href="index.html">Services</a></li>
         <li><a href="advertising.html">Advertising</a></li>
@@ -37,21 +37,22 @@
 
 
 <main class="wrapper">
-  <section class="hero reveal">
+
+  <section class="hero reveal" data-netlify-visual="contact-hero">
     <div class="hero-inner">
       <div>
-        <h1>Contact Kazoo Digital</h1>
-        <p>Tell us about your locations, campaigns, or questions and we’ll get back to you with options and next steps.</p>
+        <h1 data-netlify-visual="contact-hero-title">Contact Kazoo Digital</h1>
+        <p data-netlify-visual="contact-hero-body">Tell us about your locations, campaigns, or questions and we’ll get back to you with options and next steps.</p>
       </div>
-      <div class="hero-card">
-        <strong>Prefer email?</strong>
-        You can also reach us directly at <em>info@kazoodigital.com</em>.
-      </div>
+      <aside class="hero-card" data-netlify-visual="contact-sidecard">
+        <p><strong>Prefer email?</strong></p>
+        <p>You can also reach us directly at <em>info@kazoodigital.com</em>.</p>
+      </aside>
     </div>
   </section>
 
-  <section class="reveal">
-    <h2>Send Us a Message</h2>
+  <section class="reveal" data-netlify-visual="contact-form-section">
+    <h2 data-netlify-visual="contact-form-title">Send Us a Message</h2>
     <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
       <label for="name">Name</label>
@@ -80,12 +81,12 @@
 </main>
 
 
-<footer>
+<footer data-netlify-visual="footer">
   <div class="footer-canada">
     <img src="assets/flag-canada.png" class="flag-img" alt="Canadian flag">
-    <span>Proudly Canadian</span>
+    <span data-netlify-visual="footer-tagline">Proudly Canadian</span>
   </div>
-  &copy; <span id="year"></span> Kazoo Digital
+  <span>&copy; <span id="year"></span> Kazoo Digital</span>
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();

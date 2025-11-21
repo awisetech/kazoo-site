@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Message reçu – Kazoo Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="../assets/logo.png" class="brand-logo" alt="Logo Kazoo Digital">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="advertising.html">Publicité</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrapper">
+  <section class="hero reveal">
+    <div class="hero-inner">
+      <div>
+        <h1>Merci!</h1>
+        <p>Votre message a été envoyé avec succès. Nous vous répondrons dès que possible.</p>
+        <p><a class="btn" href="index.html">Retour aux services</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-canada">
+    <img src="../assets/flag-canada.png" class="flag-img" alt="Drapeau du Canada">
+    <span>Fièrement canadien</span>
+  </div>
+  <span>&copy; <span id="year"></span> Kazoo Digital</span>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

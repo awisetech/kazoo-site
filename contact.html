@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kazoo Digital – Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/logo.png">
+  <meta name="description" content="Contact Kazoo Digital to discuss digital signage services, outdoor advertising in Cote Saint-Luc, or a free consulting session.">
+  <meta property="og:title" content="Kazoo Digital – Contact">
+  <meta property="og:description" content="Contact Kazoo Digital to discuss digital signage services, outdoor advertising in Cote Saint-Luc, or a free consulting session.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="assets/logo.png" class="brand-logo" alt="Kazoo Digital logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="advertising.html">Advertising</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" type="button">
+        <span>⦿</span><span class="mode-label">Light</span>
+      </button>
+      <div class="lang-toggle"><a href="fr/index.html">FR</a></div>
+    </div>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="hero reveal">
+    <div class="hero-inner">
+      <div>
+        <h1>Contact Kazoo Digital</h1>
+        <p>Tell us about your locations, campaigns, or questions and we’ll get back to you with options and next steps.</p>
+      </div>
+      <div class="hero-card">
+        <strong>Prefer email?</strong>
+        You can also reach us directly at <em>info@kazoodigital.com</em>.
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Send Us a Message</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" type="text" name="phone">
+
+      <label for="interest">What are you interested in?</label>
+      <select id="interest" name="interest">
+        <option value="Digital Signage Services">Digital Signage Services</option>
+        <option value="Outdoor Advertising in Cote Saint-Luc">Outdoor Advertising in Cote Saint-Luc</option>
+        <option value="Consulting / Strategy Call">Consulting / Strategy Call</option>
+        <option value="Both">Both</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+
+<footer>
+  <div class="footer-canada">
+    <img src="assets/flag-canada.png" class="flag-img" alt="Canadian flag">
+    <span>Proudly Canadian</span>
+  </div>
+  &copy; <span id="year"></span> Kazoo Digital
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

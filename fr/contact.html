@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kazoo Digital – Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../assets/logo.png">
+  <meta name="description" content="Contactez Kazoo Digital pour discuter de vos besoins en affichage numérique, publicité extérieure ou consultation stratégique.">
+  <meta property="og:title" content="Kazoo Digital – Contact">
+  <meta property="og:description" content="Contactez Kazoo Digital pour discuter de vos besoins en affichage numérique, publicité extérieure ou consultation stratégique.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="../assets/logo.png" class="brand-logo" alt="Kazoo Digital logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="advertising.html">Publicité</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" type="button">
+        <span>⦿</span><span class="mode-label">Light</span>
+      </button>
+      <div class="lang-toggle"><a href="../index.html">EN</a></div>
+    </div>
+  </div>
+</header>
+
+
+<main class="wrapper">
+  <section class="hero reveal">
+    <div class="hero-inner">
+      <div>
+        <h1>Contactez Kazoo Digital</h1>
+        <p>Parlez-nous de vos emplacements, campagnes ou questions et nous vous reviendrons avec des options concrètes.</p>
+      </div>
+      <div class="hero-card">
+        <strong>Vous préférez le courriel&nbsp;?</strong>
+        Vous pouvez aussi nous écrire directement à <em>info@kazoodigital.com</em>.
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>Envoyez-nous un message</h2>
+    <form name="contact-fr" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact-fr">
+      <label for="nom">Nom</label>
+      <input id="nom" type="text" name="nom" required>
+
+      <label for="courriel">Courriel</label>
+      <input id="courriel" type="email" name="courriel" required>
+
+      <label for="tel">Téléphone (optionnel)</label>
+      <input id="tel" type="text" name="telephone">
+
+      <label for="interet">Que recherchez-vous&nbsp;?</label>
+      <select id="interet" name="interet">
+        <option value="Services d’affichage numérique">Services d’affichage numérique</option>
+        <option value="Publicité extérieure à Côte Saint-Luc">Publicité extérieure à Côte Saint-Luc</option>
+        <option value="Consultation / appel stratégique">Consultation / appel stratégique</option>
+        <option value="Les deux">Les deux</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </section>
+</main>
+
+
+<footer>
+  <div class="footer-canada">
+    <img src="../assets/flag-canada.png" class="flag-img" alt="Drapeau du Canada">
+    <span>Fièrement canadien</span>
+  </div>
+  &copy; <span id="year"></span> Kazoo Digital
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+[functions]
+  directory = "netlify/functions"
+
+[[edge_functions]]
+  function = "visual-editor"
+  path = "/*"
+
+[[plugins]]
+  package = "@netlify/plugin-visual-editor"

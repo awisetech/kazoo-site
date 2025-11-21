@@ -1,4 +1,3 @@
-
 /* Global reset */
 * {
   box-sizing: border-box;
@@ -318,4 +317,20 @@ footer {
   .hero-card {
     margin-top: 8px;
   }
+}
+
+/* Outdoor advertising gallery */
+.adv-photo-grid {
+  margin: 20px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.adv-photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border);
 }

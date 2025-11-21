@@ -6,5 +6,4 @@
   function = "visual-editor"
   path = "/*"
 
-[[plugins]]
-  package = "@netlify/plugin-visual-editor"
+

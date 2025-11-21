@@ -341,11 +341,16 @@ footer {
   margin: 40px 0 20px;
 }
 
-.services-img {
-  max-width: 240px;   /* adjust if you want it bigger/smaller */
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+/* Services graphic as a card */
+.services-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
+.services-img-card {
+  width: 100%;
+  max-width: 180px; /* adjust smaller/larger as needed */
+  height: auto;
+}

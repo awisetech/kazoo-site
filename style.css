@@ -329,7 +329,8 @@ footer {
 
 .adv-photo-grid img {
   width: 100%;
-  height: auto;
+  height: 260px; /* sets consistent display height */
+  object-fit: cover; /* crops nicely while maintaining proportions */
   border-radius: 12px;
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--border);

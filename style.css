@@ -335,3 +335,17 @@ footer {
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--border);
 }
+/* Services graphic */
+.services-graphic {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.services-img {
+  max-width: 480px;   /* adjust if you want it bigger/smaller */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+

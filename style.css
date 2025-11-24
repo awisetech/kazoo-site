@@ -354,3 +354,31 @@ footer {
   max-width: 180px; /* adjust smaller/larger as needed */
   height: auto;
 }
+.contact-card .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+.contact-card .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #00b4ff, #0061ff); /* logo-like blue gradient */
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.contact-card svg {
+  width: 18px;
+  height: 18px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: currentColor;
+}
+

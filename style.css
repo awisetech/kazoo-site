@@ -381,4 +381,11 @@ footer {
   stroke-linejoin: round;
   stroke: currentColor;
 }
+/* Spacing + layout for Netlify reCAPTCHA */
+[data-netlify-recaptcha] {
+  margin-top: 14px;
+  margin-bottom: 22px;
+  display: block;
+}
+
 
